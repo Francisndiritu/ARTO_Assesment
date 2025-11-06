@@ -1,0 +1,10 @@
+streamlit
+geopandas
+pandas
+rasterio
+matplotlib
+shapely
+fiona
+mapclassify
+pyproj
+requests

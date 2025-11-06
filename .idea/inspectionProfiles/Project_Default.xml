@@ -1,0 +1,34 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredPackages">
+        <list>
+          <option value="asyncio-throttle" />
+          <option value="earthaccess" />
+          <option value="fastapi-utilities" />
+          <option value="fiona" />
+          <option value="flower" />
+          <option value="GDAL" />
+          <option value="geopandas" />
+          <option value="h5py" />
+          <option value="jsonschema" />
+          <option value="motor" />
+          <option value="netCDF4" />
+          <option value="pipdeptree" />
+          <option value="pyhdf" />
+          <option value="pystac-client" />
+          <option value="redis" />
+          <option value="rtree" />
+          <option value="ruff" />
+          <option value="scikit-learn" />
+          <option value="seaborn" />
+          <option value="stackstac" />
+          <option value="tenacity" />
+          <option value="uvicorn" />
+          <option value="rasterstats" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
