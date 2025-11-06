@@ -1,4 +1,6 @@
-**#Guinea 2025 Population and Rainfall Analysis**
+[**Guinea 2025 Population and Rainfall Analysis**](git remote add origin https://github.com/Francisndiritu/ARTO_Assesment.git
+git branch -M main
+git push -u origin main)
 
 This Streamlit app analyzes Guinea’s 2025 population distribution and September rainfall 
 (CHIRPS data) at the administrative level. It downloads CHIRPS raster data, validates and 
