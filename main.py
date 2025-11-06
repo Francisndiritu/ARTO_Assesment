@@ -120,12 +120,24 @@ ax1.set_title("Population Distribution (2025)", fontsize=14)
 ax1.axis("off")
 st.pyplot(fig1)
 
+# ------------Save the Output------------
+
+pop_map_path = "Output/population_distribution_2025.png"
+fig1.savefig(pop_map_path, dpi=300, bbox_inches="tight")
+st.success(f"Population map saved in: {pop_map_path}")
+# -------------end----------------------
+
 st.subheader("Map 2: Total Rainfall (September 2025)")
 fig2, ax2 = plt.subplots(figsize=(8, 8))
 gdf.plot(column="rainfall_sep2025", ax=ax2, legend=True, cmap="Blues", edgecolor="black")
 ax2.set_title("Total Rainfall (September 2025)", fontsize=14)
 ax2.axis("off")
 st.pyplot(fig2)
+
+# --- Save Map 2 ---
+rainfall_map_path = "Output/total_rainfall_sep2025.png"
+fig2.savefig(rainfall_map_path, dpi=300, bbox_inches="tight")
+st.success(f"Rainfall map saved in: {rainfall_map_path}")
 
 # ------------------------------------------------------------------------------
 # 8️EXPORT CLEANED SHAPEFILE WITH POPULATION AND RAINFALL
@@ -144,7 +156,6 @@ st.subheader("Sample of Final Data")
 st.dataframe(gdf[["adm2_clean", "pop", "rainfall_sep2025"]].head())
 
 # ------------------------------------------------------
-
 # ------------------------------------------------------
 
 st.set_page_config(page_title="View Cleaned Shapefile", layout="wide")
@@ -169,8 +180,5 @@ st.write("**Columns available:**", list(df.columns))
 
 # --- Display attribute table ---
 st.dataframe(df)
-
-
 # --- Download/Save Locally as CSV ---
-os.makedirs("Output", exist_ok=True)  # Create the folder if it doesn't exist
 csv_path = "Output/guinea_results_2025.csv"
